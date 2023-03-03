@@ -1,0 +1,86 @@
+.counter {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+.counter p {
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 10px;
+  color: #999;
+}
+
+.count {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.count span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #f6f6f6;
+  color: #333;
+  text-align: center;
+  line-height: 1.5;
+  transition: all 0.5s ease-in-out;
+}
+
+.count:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f6f6f6;
+  transform: translateX(-50%);
+}
+
+.count:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f6f6f6;
+  transform: translateX(-50%);
+}
+
+.count.up span {
+  background-color: #84c870;
+  color: #fff;
+}
+
+.count.up:before {
+  background-color: #84c870;
+}
+
+.count.up:after {
+  background-color: #84c870;
+}
+
+.count.down span {
+  background-color: #ff5b5b;
+  color: #fff;
+}
+
+.count.down:before {
+  background-color: #ff5b5b;
+}
+
+.count.down:after {
+  background-color: #ff5b5b;
+}
